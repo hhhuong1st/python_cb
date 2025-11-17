@@ -1,6 +1,6 @@
 i = 1
-while i <=99:
-    if:
+while i <=100:
+    if i!=100:
         print (f"{i}", end="+")
     else:
         print (f"{i}")
