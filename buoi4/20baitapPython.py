@@ -59,7 +59,19 @@ for i in range(1, n + 1):
 
 
 print("== Câu 8 ==")
-for i in range(1, n + 1):
-    if i == 5:
-        continue
-    print(i)
+i=1
+min = 100000000
+max = -100000000
+
+while(i<=n):
+    try:
+        x = int(input(f"Nhập số thứ {i}: "))
+        i += 1
+        if x < min:
+            min = x
+        if x > max:
+            max = x
+    except ValueError:
+        print("Lỗi kiểu dữ liệu")
+print(f"Số nhỏ nhất: {min}")
+print(f"Số nhỏ nhất: {max}")
