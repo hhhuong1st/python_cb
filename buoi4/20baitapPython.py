@@ -81,17 +81,13 @@ print(f"Số lớn nhất: {max}")
 ############################
 
 print("== Câu 9 ==")
-i=1
+so = int(input("Nhập số để đếm chữ số: "))
+so1 = so
 dem = 0
-while(i<=10):
-    try:
-        so = int(input(f"Nhập số thứ {i}: "))
-        i += 1
-        if (so>0):
-            dem += 1
-    except ValueError:
-        print("Lỗi kiểu dữ liệu")
-print (f"Có {dem} số nguyên dương")
+while(so != 0):
+    so = so //10
+    dem +=1 
+print (f"Số {so1} có {dem} chữ số")
 
 ############################
 
