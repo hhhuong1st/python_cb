@@ -1,8 +1,5 @@
 import baikt_ham
-
-print("Nhập N: ")
 n = baikt_ham.NhapN()
-
 baikt_ham.xuat(n)
 
 print("Nhập số để kiểm tra số hoàn hảo: ")
