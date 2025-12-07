@@ -29,12 +29,16 @@
 # print("Số nhỏ nhất:", min)
 # print("Số lớn nhất:", max)
 
-print("== Câu 9 ==")
-so = int(input("Nhập số để đếm chữ số: "))
-
-so1 = so
-dem = 0
-while(so != 0):
-    so = so //10
-    dem +=1 
-print (f"Số {so1} có {dem} chữ số")
+import math
+print("== Câu 12 ==")
+n = (input('Nhập để đếm ký tự chữ cái và số: '))
+chucai = 0
+chuso = 0
+for ch in n:
+    if ch.isalpha():
+        chucai += 1
+    elif ch.isdigit():
+        chuso += 1
+print("Số ký tự là chữ cái:", chucai)
+print("Số ký tự là chữ số:", chuso)
+    

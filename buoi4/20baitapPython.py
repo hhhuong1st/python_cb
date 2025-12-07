@@ -91,3 +91,36 @@ print (f"Số {so1} có {dem} chữ số")
 
 ############################
 
+print("== Câu 10 ==")
+n = int(input('Nhập số lượng phần tử Fibonacci: '))
+a = 0
+b = 1
+for i in range (n):
+    print (a)
+    c = a + b
+    a = b
+    b = c 
+
+print("== Câu 11 ==")
+n = int(input('Nhập để kiểm tra số hoàn hảo: '))
+tong = 0
+for i in range (1, n):
+    if n%i == 0:
+        tong += i
+if tong == n:
+    print (f'{n} là số hoàn hảo')
+else:
+    print (f'{n} không là số hoàn hảo')
+
+
+print("== Câu 12 ==")
+n = (input('Nhập để đếm ký tự chữ cái và số: '))
+chucai = 0
+chuso = 0
+for ch in n:
+    if ch.isalpha():
+        chucai += 1
+    elif ch.isdigit():
+        chuso += 1
+print("Số ký tự là chữ cái:", chucai)
+print("Số ký tự là chữ số:", chuso)
