@@ -1,28 +1,11 @@
-import baitap_ham
+def NhapN():
+        try:
+            n = str(print ("Nhập chuỗi: "))
+        except ValueError:
+            print("Lỗi kiểu dữ liệu")
 
-print("=== Câu 1 ===")
-n = baitap_ham.NhapN()
-baitap_ham.cau1(n)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def cau1(N):
+    print("Chiều dài chuỗi là:", len(N))
 
 # print ("===Câu 1===")
 # s = str(input("Nhập: "))
