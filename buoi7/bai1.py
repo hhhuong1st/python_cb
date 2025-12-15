@@ -1,16 +1,27 @@
 import bai1_ham
-Diem = [7.5,8.0,6.0,9.0,5.5,8.5,7.0,6.5]
 
-# Câu 1
+# Câu 1:
+x = float(input("Nhập số m³ nước tiêu thụ: "))
+tong = bai1_ham.tinhtiennuoc(x)
+if not tong:
+    print("Số m³ nước không hợp lệ")
+else:
+    print(f"Tổng tiền nước phải trả (đã gồm phí): {tong} đồng")
+
+
+
+
+# Câu 3:
+Diem = [7.5,8.0,6.0,9.0,5.5,8.5,7.0,6.5]
+# Câu a
 print(f"Điểm trung bình là: {bai1_ham.diemtrungbinh(Diem)}")
-# Câu 2
+# Câu b
 print (f"Điểm cao nhất là: {bai1_ham.Diemcaonhat(Diem)}")
-# Câu 3
+# Câu c
 demsodiem = bai1_ham.Demsodiem(Diem)
 print (f"Điểm từ 8 là: {demsodiem[0]}")
 print (f"Điểm nhỏ hơn 8 là: {demsodiem[1]}")
-
-# Câu 4
+# Câu d
 print(f"Sắp xếp danh sách tăng dần: {bai1_ham.Sapxeptangdan(Diem)}")
 
 

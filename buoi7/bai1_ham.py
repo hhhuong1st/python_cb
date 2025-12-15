@@ -1,4 +1,20 @@
+# Câu 1:
+def tinhtiennuoc(x):
+    if x <= 0:
+        return None
+    tiennuoc = 0
+    if x <= 10:
+        tiennuoc = x * 7000
+    elif x <= 20:
+        tiennuoc = 10 * 7000 + (x - 10) * 9000
+    else:
+        tiennuoc = 10 * 7000 + 10 * 9000 + (x - 20) * 12000
+    phimoitruong = tiennuoc * 0.05
+    tongtien = tiennuoc + phimoitruong
+    return tongtien
 
+
+# Câu 3:
 # a
 def diemtrungbinh(Diem):
     tong = 0
