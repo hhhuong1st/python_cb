@@ -1,3 +1,4 @@
+import random
 # Câu 1:
 def tinhtiennuoc(x):
     if x <= 0:
@@ -13,6 +14,24 @@ def tinhtiennuoc(x):
     tongtien = tiennuoc + phimoitruong
     return tongtien
 
+# Câu 2:
+diem = 0
+for i in range (1,7):
+    print ("Lượt", i)
+    if random.random()<0.6:
+        diemcong=random.randint(5,30)
+        diem += diemcong
+        print(f"Tìm thấy kho báo, được cộng {diemcong} điểm") 
+    else:
+        diem = diem -2
+        if(diem<=0):
+            diem = 0
+            print ("Không tìm thấy trừ 2 điểm")
+    print(f"Tổng điểm {diem}")
+    if (diem>=80):
+        print ("Thắng")
+if(diem<80):
+    print ("Thua")
 
 # Câu 3:
 # a
