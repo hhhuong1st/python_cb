@@ -17,7 +17,7 @@ def tinhtiennuoc(x):
 # Câu 2:
 diem = 0
 for i in range (1,7):
-    print ("Lượt", i)
+    print ("=> Lượt", i)
     if random.random()<0.6:
         diemcong=random.randint(5,30)
         diem += diemcong
